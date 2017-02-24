@@ -12,9 +12,10 @@ public class TowersOfHanoi {
     if (n == 1){
       printpattern(from,to);
       return;
-    } if (n == 0){
+    } 
+    if (n == 0){
       return;
-    } else{
+    } else {
       towersOfhanoi(n-1, from, temp, to );
       towersOfhanoi(1,  from, to, temp );
       towersOfhanoi(n-1, temp, to, from );
